@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.documentation="https://github.com/righettod/toolb
 LABEL org.opencontainers.image.licenses="GPL-3.0-only"
 LABEL org.opencontainers.image.title="toolbox-jwt"
 LABEL org.opencontainers.image.description="Customized toolbox to perform different attacks against JWT tokens"
-LABEL org.opencontainers.image.base.name="righettod/toolbox-jwt:latest"
+LABEL org.opencontainers.image.base.name="righettod/toolbox-jwt:main"
 RUN apt update
 RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim
 RUN mkdir /work

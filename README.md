@@ -4,9 +4,9 @@
 
 ## 🎯 Description
 
-The goal of this image is to provide a ready-to-use toolbox with differents having for th objective to perform differents kins of attack agianst [JWT](https://jwt.io/) tokens.
+The goal of this image is to provide a ready-to-use toolbox with different scripts having for the objective to perform different kinds of attacks against [JWT](https://jwt.io/) tokens.
 
-💡 Indeed, some existing scritp require specific runtilme/package/etc so the goal is have a quick ready-to-use sandbox to execute them to obtain crafted JWT token.
+💡 Indeed, some existing scripts require specific runtime/package/etc. so the goal is to have a quick ready-to-use sandbox to execute them to obtain crafted JWT token.
 
 ## 📦 Build
 
