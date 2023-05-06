@@ -8,8 +8,6 @@ The goal of this image is to provide a ready-to-use toolbox with differents havi
 
 ## 📦 Build
 
-> **Note**: The image is build every week and pushed to the GitHub image repository. You can retrieve it with the `docker pull ghcr.io/righettod/toolbox-jwt:main` command.
-
 Use the following set of command to build the docker image of the toolbox:
 
 ```bash
@@ -17,6 +15,10 @@ git clone https://github.com/righettod/toolbox-jwt.git
 cd toolbox-jwt
 docker build . -t righettod/toolbox-jwt
 ```
+
+💡 The image is build every week and pushed to the GitHub image repository. You can retrieve it with the following command:
+
+`docker pull ghcr.io/righettod/toolbox-jwt:main`
 
 ## 🤔 Usage
 
