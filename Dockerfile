@@ -15,6 +15,7 @@ WORKDIR /work
 COPY . . 
 RUN rm Dockerfile LICENSE project.code-workspace
 RUN pip3 install -r rsa_sign2n/standalone/requirements.txt
+RUN pip3 install -r jwt_tool/requirements.txt
 RUN gem install ecdsa openssl base64
 RUN chmod -R +x *
 RUN echo "alias ll='ls -rtl' >> /root/.bashrc"
