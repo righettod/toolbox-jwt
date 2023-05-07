@@ -13,7 +13,8 @@ RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl lib
 RUN mkdir /work
 WORKDIR /work
 COPY . . 
-RUN rm Dockerfile LICENSE project.code-workspace
+RUN rm Dockerfile LICENSE project.code-workspace .gitignore .gitmodules
+RUN rm -rf .git .github .vscode
 RUN pip3 install -r rsa_sign2n/standalone/requirements.txt
 RUN pip3 install -r jwt_tool/requirements.txt
 RUN gem install ecdsa openssl base64
