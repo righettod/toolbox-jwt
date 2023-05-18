@@ -90,13 +90,13 @@ eyJ0eXAiOiJKV1Qi...
 eyJ0eXAiOiJKV1Qj...
 ```
 
-### Script 'apply-ticarpi-jwt-attack-playbook.sh'
+### Script 'apply-jwt-ticarpi-attack-playbook.sh'
 
 Script to test an web service against the [TICARPI attack playbook](https://github.com/ticarpi/jwt_tool/wiki/Attack-Methodology).
 
 💻 Usage:
 
-`bash apply-ticarpi-jwt-attack-playbook.sh "ENDPOINT_FULL_URL" "CANARY_WORD" "VALID_JWT_TOKEN"`
+`bash apply-jwt-ticarpi-attack-playbook.sh "ENDPOINT_FULL_URL" "CANARY_WORD" "VALID_JWT_TOKEN"`
 
 📍 The **canary word** is a word that must be present in the HTTP response when the JWT token is accepted (case-sensitive).
 
@@ -104,7 +104,7 @@ Script to test an web service against the [TICARPI attack playbook](https://gith
 
 ```bash
 # Once in the bash of the toolbox
-bash apply-ticarpi-jwt-attack-playbook.sh "https://righettod.eu/api/profile" "righettod" "eyJ0eXA..."
+bash apply-jwt-ticarpi-attack-playbook.sh "https://righettod.eu/api/profile" "righettod" "eyJ0eXA..."
 ...
 ```
 
