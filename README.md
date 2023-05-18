@@ -123,14 +123,12 @@ Script to try to recover the secret of a JWT token signed with a HMAC algorithm.
 ```bash
 # Once in the bash of the toolbox
 bash apply-jwt-secret-brute-force.sh 'eyJhbGci...'
-[+] Convert the token to John format...
-[+] Launch recovery tentative...
 Using default input encoding: UTF-8
 Loaded 1 password hash (HMAC-SHA256 [password is key, SHA256 256/256 AVX2 8x])
 Will run 12 OpenMP threads
 Press Ctrl-C to abort, or send SIGUSR1 to john process for status
-p@ssw0rd         (?)
-1g 0:00:00:00 DONE (2023-05-18 09:58) 50.00g/s 1228Kp/s 1228Kc/s 1228KC/s 123456..280690
+secret           (?)
+1g 0:00:00:00 DONE (2023-05-18 15:20) 33.33g/s 819200p/s 819200c/s 819200C/s 123456..280690
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```

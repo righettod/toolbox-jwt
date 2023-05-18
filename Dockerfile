@@ -26,7 +26,6 @@ RUN tar -xvf /tmp/rockyou.tgz
 RUN rm /tmp/rockyou.tgz
 RUN iconv -f ISO-8859-1 -t UTF-8//TRANSLIT /work/rockyou.txt -o /work/rockyou-converted.txt
 RUN mv /work/rockyou-converted.txt /work/rockyou.txt
-RUN wget -q https://raw.githubusercontent.com/Sjord/jwtcrack/master/jwt2john.py
 RUN chmod -R +x *
 RUN echo "alias ll='ls -rtl' >> /root/.bashrc"
 RUN echo "export PATH=$PATH:/work/john/run >> /root/.bashrc"

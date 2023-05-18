@@ -25,8 +25,6 @@ fi
 token_format="HMAC-SHA256"
 token="$1"
 token_file="/tmp/token.txt"
-echo "[+] Convert the token to John format..."
-python3 jwt2john.py "$token" > $token_file
-echo "[+] Launch recovery tentative..."
+echo "$token" > $token_file
 cd john/run
 ./john $token_file --wordlist=/work/rockyou.txt --format=$token_format
