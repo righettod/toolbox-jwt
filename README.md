@@ -108,6 +108,33 @@ bash apply-ticarpi-jwt-attack-playbook.sh "https://righettod.eu/api/profile" "ri
 ...
 ```
 
+### Script 'apply-jwt-secret-brute-force.sh'
+
+> **Note**: [John The Ripper](https://github.com/openwall/john) is used with the [RockYou](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz) dictionary and default token format is **HMAC-SHA256**.
+
+Script to try to recover the secret of a JWT token signed with a HMAC algorithm.
+
+💻 Usage:
+
+`bash apply-jwt-secret-brute-force.sh "JWT_HMAC_SIGNED_TOKEN"`
+
+💻 Example:
+
+```bash
+# Once in the bash of the toolbox
+bash apply-jwt-secret-brute-force.sh 'eyJhbGci...'
+[+] Convert the token to John format...
+[+] Launch recovery tentative...
+Using default input encoding: UTF-8
+Loaded 1 password hash (HMAC-SHA256 [password is key, SHA256 256/256 AVX2 8x])
+Will run 12 OpenMP threads
+Press Ctrl-C to abort, or send SIGUSR1 to john process for status
+p@ssw0rd         (?)
+1g 0:00:00:00 DONE (2023-05-18 09:58) 50.00g/s 1228Kp/s 1228Kc/s 1228KC/s 123456..280690
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
+```
+
 ## 🤝 Sources & credits
 
 * <https://blog.pentesterlab.com/exploring-algorithm-confusion-attacks-on-jwt-exploiting-ecdsa-23f7ff83390f>
@@ -115,3 +142,10 @@ bash apply-ticarpi-jwt-attack-playbook.sh "https://righettod.eu/api/profile" "ri
 * <https://blog.silentsignal.eu/2021/02/08/abusing-jwt-public-keys-without-the-public-key/>
 * <https://github.com/ticarpi/jwt_tool>
 * <https://github.com/ticarpi/jwt_tool/wiki>
+* <https://github.com/Sjord/jwtcrack>
+* <https://www.openwall.com/john/>
+* <https://github.com/openwall/john>
+* <https://gist.github.com/pich4ya/f76280b7a6af67a9adf740f3ee547689>
+* <https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Databases>
+* <https://www.javainuse.com/jwtgenerator>
+* <https://jwt.io/>
