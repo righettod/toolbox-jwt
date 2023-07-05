@@ -33,7 +33,7 @@ docker run --rm -it ghcr.io/righettod/toolbox-jwt:main /bin/bash
 
 ## 📋 Content
 
-> **Warning**: To perform an offline brute force operation against a HMAC secretn use this [JohnTheRipper Docker image](https://github.com/openwall/john-packages#-docker-image).
+> **Warning**: To perform an offline brute force operation against a HMAC secret, use one of these [JohnTheRipper packages](https://github.com/openwall/john-packages).
 
 ### Script 'generate-jwt-ecdsa-derivated-public-keys.rb'
 
