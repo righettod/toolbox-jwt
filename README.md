@@ -100,6 +100,8 @@ Script to test an web service against the [TICARPI attack playbook](https://gith
 
 📍 The **canary word** is a word that must be present in the HTTP response when the JWT token is accepted (case-sensitive).
 
+💡 Pipe the command above with ` | grep --color=always -F "Response Code: 200"` to display only requests for which the token was accepted.
+
 💻 Example:
 
 ```bash
