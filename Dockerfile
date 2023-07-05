@@ -20,11 +20,6 @@ RUN pip3 install -r rsa_sign2n/standalone/requirements.txt
 RUN pip3 install -r jwt_tool/requirements.txt
 RUN pip3 install PyJWT
 RUN gem install ecdsa openssl base64
-RUN wget -q -O /tmp/rockyou.tgz https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
-RUN tar -xvf /tmp/rockyou.tgz
-RUN rm /tmp/rockyou.tgz
-RUN iconv -f ISO-8859-1 -t UTF-8//TRANSLIT /work/rockyou.txt -o /work/rockyou-converted.txt
-RUN mv /work/rockyou-converted.txt /work/rockyou.txt
 RUN chmod -R +x *
 RUN echo "alias ll='ls -rtl' >> /root/.bashrc"
 RUN echo "export PATH=$PATH:/work/john/run >> /root/.bashrc"
