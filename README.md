@@ -103,7 +103,7 @@ eyJ0eXAiOiJKV1Qj...
 
 ### Script 'apply-jwt-ticarpi-attack-playbook.sh'
 
-Script to test an web service against the [TICARPI attack playbook](https://github.com/ticarpi/jwt_tool/wiki/Attack-Methodology).
+Script to test an web service against the [TICARPI attack playbook](https://github.com/ticarpi/jwt_tool/wiki/Attack-Methodology) ❤.
 
 💻 Usage:
 
