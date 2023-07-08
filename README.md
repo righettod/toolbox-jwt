@@ -138,3 +138,4 @@ bash apply-jwt-ticarpi-attack-playbook.sh "https://righettod.eu/api/profile" "ri
 * <https://www.javainuse.com/jwtgenerator>
 * <https://jwt.io/>
 * <https://github.com/openwall/john-packages>
+* <https://token.dev/>
