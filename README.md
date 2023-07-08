@@ -27,7 +27,7 @@ docker build . -t righettod/toolbox-jwt
 Use the following command to create a container of the toolbox:
 
 ```bash
-docker run --rm -it ghcr.io/righettod/toolbox-jwt:main /bin/bash
+docker run --rm -it ghcr.io/righettod/toolbox-jwt:main /bin/zsh
 # From here, use one of the provided script...
 ```
 
