@@ -10,7 +10,7 @@ LABEL org.opencontainers.image.description="Customized toolbox to perform differ
 LABEL org.opencontainers.image.base.name="righettod/toolbox-jwt:main"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update
-RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap 
+RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap zsh dos2unix dnsutils
 RUN mkdir /work
 WORKDIR /work
 COPY . .
@@ -20,6 +20,7 @@ RUN pip3 install -r rsa_sign2n/standalone/requirements.txt
 RUN pip3 install -r jwt_tool/requirements.txt
 RUN pip3 install PyJWT
 RUN gem install ecdsa openssl base64
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 RUN chmod -R +x *
 RUN echo "alias ll='ls -rtl' >> /root/.bashrc"
 RUN cd jwt_tool;python3 jwt_tool.py eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InRpY2FycGkifQ.bsSwqj2c2uI9n7-ajmi3ixVGhPUiY7jO9SUn9dm15Po;echo 0
