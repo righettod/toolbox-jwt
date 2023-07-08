@@ -38,7 +38,7 @@ To perform an offline brute force operation against a HMAC secret, use one of th
 💻 Usage:
 
 ```bash
-john tokens.txt --wordlist=rockyou.txt --format="HMAC-SHA256"
+john tokens.txt --wordlist=rockyou.txt --rules=best64 --format="HMAC-SHA256"
 john tokens.txt --show
 ```
 
