@@ -10,7 +10,7 @@ LABEL org.opencontainers.image.description="Customized toolbox to perform differ
 LABEL org.opencontainers.image.base.name="righettod/toolbox-jwt:main"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update
-RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap zsh dos2unix dnsutils
+RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap zsh dos2unix dnsutils git
 RUN mkdir /work
 WORKDIR /work
 COPY . .
