@@ -22,7 +22,7 @@ docker build . -t righettod/toolbox-jwt
 
 `docker pull ghcr.io/righettod/toolbox-jwt:main`
 
-## 🤔 Usage
+## 👨‍💻 Usage
 
 Use the following command to create a container of the toolbox:
 
