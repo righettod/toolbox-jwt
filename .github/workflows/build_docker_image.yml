@@ -37,3 +37,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+      - name: Update image information file
+        run: docker image inspect ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} > image-info.json; git config --global user.email "gha@github.com"; git config --global user.name "GHActionBot"; git commit -m "Sync image information file" image-info.json; git push
