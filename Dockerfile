@@ -28,6 +28,7 @@ RUN echo "alias cat-colorized='highlight -O ansi --force'" >> /root/.bashrc
 RUN echo "alias ll='ls -rtl'" >> /root/.zshrc
 RUN echo "alias print-jwt='python3 /work/jwt_tool/jwt_tool.py'" >> /root/.zshrc
 RUN echo "alias cat-colorized='highlight -O ansi --force'" >> /root/.zshrc
+RUN echo "alias jwtconfig-edit='nano /root/.jwt_tool/jwtconf.ini'" >> /root/.zshrc
 RUN cd jwt_tool;python3 jwt_tool.py eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InRpY2FycGkifQ.bsSwqj2c2uI9n7-ajmi3ixVGhPUiY7jO9SUn9dm15Po;echo 0
 RUN cd jwt_tool;python3 jwt_tool.py eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InRpY2FycGkifQ.bsSwqj2c2uI9n7-ajmi3ixVGhPUiY7jO9SUn9dm15Po;echo 0
 RUN apt autoremove -y
