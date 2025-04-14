@@ -6,6 +6,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: "righettod/toolbox-jwt"
+permissions: read-all   
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
