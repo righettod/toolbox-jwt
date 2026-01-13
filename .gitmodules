@@ -1,6 +1,8 @@
 [submodule "rsa_sign2n"]
 	path = rsa_sign2n
 	url = https://github.com/silentsignal/rsa_sign2n
+	branch = release
 [submodule "jwt_tool"]
 	path = jwt_tool
 	url = https://github.com/ticarpi/jwt_tool
+	branch = master
