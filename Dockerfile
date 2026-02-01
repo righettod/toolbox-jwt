@@ -13,7 +13,7 @@ RUN apt update
 RUN apt install -y software-properties-common
 RUN add-apt-repository -y ppa:deadsnakes/ppa
 RUN apt update
-RUN apt install -y python3.11 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap zsh dos2unix dnsutils git highlight
+RUN apt install -y python3 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap zsh dos2unix dnsutils git highlight
 RUN mkdir /work
 WORKDIR /work
 COPY . .
