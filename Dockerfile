@@ -16,11 +16,13 @@ WORKDIR /work
 COPY . .
 RUN rm Dockerfile LICENSE project.code-workspace .gitignore .gitmodules 
 RUN rm -rf .git .github .vscode
-RUN yq -r '.project.dependencies[]' rsa_sign2n/standalone/pyproject.toml > /tmp/req.txt
+RUN wget -q -O /tmp/yq https://github.com/mikefarah/yq/releases/download/v4.52.2/yq_linux_amd64
+RUN chmod +x /tmp/yq
+RUN /tmp/yq -r '.project.dependencies[]' rsa_sign2n/standalone/pyproject.toml > /tmp/req.txt
 RUN pip3 install -r /tmp/req.txt
 RUN pip3 install -r jwt_tool/requirements.txt
 RUN pip3 install PyJWT
-RUN rm /tmp/req.txt
+RUN rm /tmp/req.txt /tmp/yq
 RUN gem install ecdsa openssl base64
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 RUN chmod -R +x *
