@@ -10,15 +10,17 @@ LABEL org.opencontainers.image.description="Customized toolbox to perform differ
 LABEL org.opencontainers.image.base.name="righettod/toolbox-jwt:main"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update
-RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap zsh dos2unix dnsutils git highlight
+RUN apt install -y python3.8 python3-pip python3-gmpy2 ruby ruby-dev openssl libssl-dev curl wget make nano vim iputils-ping nmap zsh dos2unix dnsutils git highlight yq
 RUN mkdir /work
 WORKDIR /work
 COPY . .
 RUN rm Dockerfile LICENSE project.code-workspace .gitignore .gitmodules 
 RUN rm -rf .git .github .vscode
-RUN pip3 install -r rsa_sign2n/standalone/requirements.txt
+RUN yq -r '.project.dependencies[]' rsa_sign2n/standalone/pyproject.toml > /tmp/req.txt
+RUN pip3 install -r /tmp/req.txt
 RUN pip3 install -r jwt_tool/requirements.txt
 RUN pip3 install PyJWT
+RUN rm /tmp/req.txt
 RUN gem install ecdsa openssl base64
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 RUN chmod -R +x *
