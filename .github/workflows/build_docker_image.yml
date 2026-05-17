@@ -16,11 +16,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-        with:
-          submodules: recursive
-          fetch-depth: 1
-      - name: Update submodules
-        run: git submodule update --remote --recursive --depth 1
       - name: List content from checkout
         run: ls -rtl
       - name: Log in to the Container registry
