@@ -1,28 +1,16 @@
 [
     {
-        "Id": "sha256:05db7f99bf9e4e8aacb0d260c348a8ff22e0be542fddbdfdac3beebb0aafc9e5",
+        "Id": "sha256:a5d7aa8d702fbc6a25981b5ea305616479d75e20e6b830994590f51a5ec52c84",
         "RepoTags": [
             "ghcr.io/righettod/toolbox-jwt:main",
             "ghcr.io/righettod/toolbox-jwt:nightly"
         ],
         "RepoDigests": [
-            "ghcr.io/righettod/toolbox-jwt@sha256:04b908236b843e3bcc4c8b5a74c1f7d1f4a9d3df3c261d5b2fd878f2e4e3dd7c"
+            "ghcr.io/righettod/toolbox-jwt@sha256:a5d7aa8d702fbc6a25981b5ea305616479d75e20e6b830994590f51a5ec52c84"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-10-18T00:41:32.936378397Z",
-        "DockerVersion": "",
-        "Author": "",
+        "Created": "2026-10-25T00:41:05.218938913Z",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
-            "User": "",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/work/pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "DEBIAN_FRONTEND=noninteractive"
@@ -30,19 +18,15 @@
             "Cmd": [
                 "/bin/bash"
             ],
-            "Image": "",
-            "Volumes": null,
             "WorkingDir": "/work",
-            "Entrypoint": null,
-            "OnBuild": null,
             "Labels": {
                 "org.opencontainers.image.authors": "dominique.righetto@gmail.com",
                 "org.opencontainers.image.base.name": "righettod/toolbox-jwt:main",
-                "org.opencontainers.image.created": "2026-10-18T00:40:21.887Z",
+                "org.opencontainers.image.created": "2026-10-25T00:40:03.276Z",
                 "org.opencontainers.image.description": "Docker toolbox with different scripts having for the objective to perform different kinds of attacks against JWT tokens.",
                 "org.opencontainers.image.documentation": "https://github.com/righettod/toolbox-jwt",
                 "org.opencontainers.image.licenses": "GPL-3.0",
-                "org.opencontainers.image.revision": "b688c15fbc5c9c205f70de8f66d3a792e4dc523e",
+                "org.opencontainers.image.revision": "9e25fcbf86ed1b4931797fbf2137db26aef68993",
                 "org.opencontainers.image.source": "https://github.com/righettod/toolbox-jwt",
                 "org.opencontainers.image.title": "toolbox-jwt",
                 "org.opencontainers.image.url": "https://github.com/righettod/toolbox-jwt",
@@ -52,42 +36,46 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 876911513,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/99kve3ommp03vus1lupvcgncf/diff:/var/lib/docker/overlay2/316fd0s66g4sdviggd4ldmrh3/diff:/var/lib/docker/overlay2/w6mowe06g7yf1n56vpu10ji2t/diff:/var/lib/docker/overlay2/ypg5ezdyz1f5ith3anui6fd5x/diff:/var/lib/docker/overlay2/q7rfpg6ytqiav9ogspykat3z7/diff:/var/lib/docker/overlay2/t31sh9c7hpjw9pd6oebcbqiqh/diff:/var/lib/docker/overlay2/p5ncc5o12qqgamo4vi9o38k03/diff:/var/lib/docker/overlay2/z6aj9i0b5hzbitly8930gfurp/diff:/var/lib/docker/overlay2/7nhre7z5g0j191om5f2mygepi/diff:/var/lib/docker/overlay2/anuk8coqrt15lrlrfx8vp0bji/diff:/var/lib/docker/overlay2/w3cu4fn3lahm0ov7i5mvarlk9/diff:/var/lib/docker/overlay2/9n2r6xvn0773ntycf3j0enxkq/diff:/var/lib/docker/overlay2/0xj3ce392ltct37t2otried8p/diff:/var/lib/docker/overlay2/jqxokcgjag9y1j2fqlbaokue0/diff:/var/lib/docker/overlay2/pnsiipn8my6gzck1dkfaotwq4/diff:/var/lib/docker/overlay2/suytbn2l2oak9lcp40ibsudbx/diff:/var/lib/docker/overlay2/s8c7pvy91cfornrcwvr854sds/diff:/var/lib/docker/overlay2/c1a6e7dfae05b26a1e8e6c8b3e7a1170e17209052ef270e002366a884aa25d65/diff",
-                "MergedDir": "/var/lib/docker/overlay2/menuesw4a7vox3ztv1rgkdle2/merged",
-                "UpperDir": "/var/lib/docker/overlay2/menuesw4a7vox3ztv1rgkdle2/diff",
-                "WorkDir": "/var/lib/docker/overlay2/menuesw4a7vox3ztv1rgkdle2/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 339507041,
         "RootFS": {
             "Type": "layers",
             "Layers": [
                 "sha256:32ab39660fd51c6dc3aae486b42d42bbe8fe4c1db78eaf57bb9c21198de48a16",
-                "sha256:94e8b541f93f43fd36ff5e444249283bcaf0c80c1952c9f673ee20a217805704",
-                "sha256:af93b103c290e649fbff99f96a5c8787ae8dd7577fba42639b57690d170fd88d",
-                "sha256:0dcfc0b8f714ff4334506277272b1180ce875748a99daddc72337598aad6d7b5",
+                "sha256:25a0104423fe5c12b433615a1c7ba680e8a9a769c8dbf1eed2b17762e5173f0c",
+                "sha256:9f8080e2ac12b9b2bc2c90cef1fe8d669c6ae29c7a39237dbb847aaa4235c26b",
+                "sha256:bf5914cb6595f2515808320157c6359f84859387d33a8b350b7a1a06e5c064c6",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:dfdeeccdc0389aef33e852ff4bdb5fc4142b76b215215127573210b6516e3187",
-                "sha256:920a6b53f1e7ac91dd599c490d56046eef2ec8488a47453573dac82836418d9d",
-                "sha256:a64449c2f1ff7b88a65f9f15a7b68b9df28e7c1d018ee84015a494228ff004dd",
-                "sha256:71c7faa3d02ca8cf89f64e144265ec8fb5a3680a3b7d3e314b8ca249baf0932f",
-                "sha256:86448597a4f836dfc00739592661053fa84ce92e0e131f5112077ff48f0cf860",
-                "sha256:803b7c47601a0e3f65f1d2b9f9c7dcfb2b997a6604a76a79077d86020bb162d1",
-                "sha256:b2bf52008bc168052b41432bd28d95e3226234358893a699853d6a19a27d666d",
-                "sha256:49aa5c77a58e8924350ed65d5aa4c2abf0689c7e9d22317af655457d36c54675",
-                "sha256:08fce3de72409b734ac9bdf54d0be4402fe4303e1368fe77642f555b41af6ef2",
+                "sha256:aef9490a8613c61ff0bab9be2bf2a4270e24ab090272211d84e4eccf879cc373",
+                "sha256:aaed39dd9d777ecc796d493ce0ec2b43e41fb417c1f34017373085225a0fac48",
+                "sha256:1dbb588094327cbab91885bb112e0c16cc19c100368d93931aeafee94c1a76f8",
+                "sha256:9c04a26347fd8e22f0ef1f084ad0da188c242f71d0f9f8922f7c7586ade8c391",
+                "sha256:b7541f50a6df8e1a9c1f68761df6a7e1dab26e6137cdd43e3d313ac5b364dce9",
+                "sha256:ee0963cb878720eefb865808e564b7551bff1056c7ebe26d42b3a38f53057f2a",
+                "sha256:d95801c68b4c446e10d332bc95c976eae6dfec9c03357d04cd468b1bea2ef773",
+                "sha256:417277555b92510959adb49f3350aba9e4fc54e5a6e97125170c94103f5a26b0",
+                "sha256:5203a99fb7c92f91c5bbf4057cb929e2223ad46217283c6a88c290956a16768c",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:6ca6369fe64584f2c8a8841f2a9b852cef8ae79de430ac3695cd43c189925171",
-                "sha256:b3ea2e248414d8a242458ed93b323ded17edaeec9fa7bc2d7cc5d6c18c418896",
-                "sha256:fae7ab1dd8dd55b0b587d61de559477d0970e1b3602bb6f51a51469060888755"
+                "sha256:112b40c50a1c11952984f3a369f0a12d6e8fcf39780ab0e20cc7105ad0875a9a",
+                "sha256:1b65a9e9463f6a9ebb8e5345a5a0b140be5e58cb03ae5a4e372424d9abd1f964",
+                "sha256:a32579b42f269c688a7485b357473ddf144f35ec2ee6390baa477be40ef1a701"
             ]
         },
         "Metadata": {
-            "LastTagTime": "2026-10-18T00:41:44.967302995Z"
+            "LastTagTime": "2026-10-25T00:41:23.423219284Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:a5d7aa8d702fbc6a25981b5ea305616479d75e20e6b830994590f51a5ec52c84",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "2c2wibhkq44a6s3tlfaf3ukeh",
+                    "CreatedAt": "2026-10-25T00:41:23.426088979Z"
+                }
+            ]
         }
     }
 ]
