@@ -1,15 +1,15 @@
 [
     {
-        "Id": "sha256:a5d7aa8d702fbc6a25981b5ea305616479d75e20e6b830994590f51a5ec52c84",
+        "Id": "sha256:c6c2e0342cc7a8b33c1c0bd570a6cbaaa2056c54f90b108643ed409c78bfdc17",
         "RepoTags": [
             "ghcr.io/righettod/toolbox-jwt:main",
             "ghcr.io/righettod/toolbox-jwt:nightly"
         ],
         "RepoDigests": [
-            "ghcr.io/righettod/toolbox-jwt@sha256:a5d7aa8d702fbc6a25981b5ea305616479d75e20e6b830994590f51a5ec52c84"
+            "ghcr.io/righettod/toolbox-jwt@sha256:c6c2e0342cc7a8b33c1c0bd570a6cbaaa2056c54f90b108643ed409c78bfdc17"
         ],
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-10-25T00:41:05.218938913Z",
+        "Created": "2026-11-01T00:30:24.925663755Z",
         "Config": {
             "Env": [
                 "PATH=/work/pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
@@ -22,11 +22,11 @@
             "Labels": {
                 "org.opencontainers.image.authors": "dominique.righetto@gmail.com",
                 "org.opencontainers.image.base.name": "righettod/toolbox-jwt:main",
-                "org.opencontainers.image.created": "2026-10-25T00:40:03.276Z",
+                "org.opencontainers.image.created": "2026-11-01T00:29:13.275Z",
                 "org.opencontainers.image.description": "Docker toolbox with different scripts having for the objective to perform different kinds of attacks against JWT tokens.",
                 "org.opencontainers.image.documentation": "https://github.com/righettod/toolbox-jwt",
                 "org.opencontainers.image.licenses": "GPL-3.0",
-                "org.opencontainers.image.revision": "9e25fcbf86ed1b4931797fbf2137db26aef68993",
+                "org.opencontainers.image.revision": "cbfa05c9b16438e507863d0de1b6e784ddc0741e",
                 "org.opencontainers.image.source": "https://github.com/righettod/toolbox-jwt",
                 "org.opencontainers.image.title": "toolbox-jwt",
                 "org.opencontainers.image.url": "https://github.com/righettod/toolbox-jwt",
@@ -36,44 +36,44 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 339507041,
+        "Size": 339354524,
         "RootFS": {
             "Type": "layers",
             "Layers": [
-                "sha256:32ab39660fd51c6dc3aae486b42d42bbe8fe4c1db78eaf57bb9c21198de48a16",
-                "sha256:25a0104423fe5c12b433615a1c7ba680e8a9a769c8dbf1eed2b17762e5173f0c",
-                "sha256:9f8080e2ac12b9b2bc2c90cef1fe8d669c6ae29c7a39237dbb847aaa4235c26b",
-                "sha256:bf5914cb6595f2515808320157c6359f84859387d33a8b350b7a1a06e5c064c6",
+                "sha256:bec87777bc2fb2edcdf9af11df1531469e7df911309c1413082b18fcb8610278",
+                "sha256:b3da3ae0c61f5635ec1de17024e571fbe419895af0e6eb9eebab21bb168bbd7b",
+                "sha256:15698d4eef132d7e9b783e8b7af72c08fbf846ff45bc052cff62b098ad95cba6",
+                "sha256:e880891bcc9f25f09eefa6dd0507a328ac804eb6c04b02d3bd12a9b30fcb9651",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:aef9490a8613c61ff0bab9be2bf2a4270e24ab090272211d84e4eccf879cc373",
-                "sha256:aaed39dd9d777ecc796d493ce0ec2b43e41fb417c1f34017373085225a0fac48",
-                "sha256:1dbb588094327cbab91885bb112e0c16cc19c100368d93931aeafee94c1a76f8",
-                "sha256:9c04a26347fd8e22f0ef1f084ad0da188c242f71d0f9f8922f7c7586ade8c391",
-                "sha256:b7541f50a6df8e1a9c1f68761df6a7e1dab26e6137cdd43e3d313ac5b364dce9",
-                "sha256:ee0963cb878720eefb865808e564b7551bff1056c7ebe26d42b3a38f53057f2a",
-                "sha256:d95801c68b4c446e10d332bc95c976eae6dfec9c03357d04cd468b1bea2ef773",
-                "sha256:417277555b92510959adb49f3350aba9e4fc54e5a6e97125170c94103f5a26b0",
-                "sha256:5203a99fb7c92f91c5bbf4057cb929e2223ad46217283c6a88c290956a16768c",
+                "sha256:eec666039c82499308d22e5262cf9516a9f22a904dae8022a60fef4fce554191",
+                "sha256:a2ca9c2df4f867bd052bc0ca0df802254729011c70593696fd460cbfed4e680a",
+                "sha256:9899bb2108ad4e404da31e331876b9aebb5138fa832932477ad433f89bdd3808",
+                "sha256:113e1b0fe5cdca7797d3b2d2a06efacfc78070575e947a030c10db68bbf15a24",
+                "sha256:eb6070ea394fb3515826f347fb83b9e89d9dfae56212adca7e7bf2e196deaa33",
+                "sha256:5f433ad071442c6513cca134aff517629512b0d094b51c310489aa1214ccd476",
+                "sha256:0e779caf9db43bd319c9373aa7f98b25d459595261dda80577ed512b4ee79889",
+                "sha256:b702b394ea949dca6c1b15dea0758440a2218a5e42d9bec59d56d30ee9d46bf7",
+                "sha256:b918fd6d9fd3122f24fea2f1c54060c65aa698d57a1e5821e826995a6490f427",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
                 "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-                "sha256:112b40c50a1c11952984f3a369f0a12d6e8fcf39780ab0e20cc7105ad0875a9a",
-                "sha256:1b65a9e9463f6a9ebb8e5345a5a0b140be5e58cb03ae5a4e372424d9abd1f964",
-                "sha256:a32579b42f269c688a7485b357473ddf144f35ec2ee6390baa477be40ef1a701"
+                "sha256:8bd4251681393a2b16ea6fbdc021c444ebf573736e7173f5bb84772091f3bd58",
+                "sha256:d4bf4e03465b051a8051b6922b4432d1b68f4f1fa2e499d53f37ab95327d1864",
+                "sha256:7bb3b1fa12f6b497bd967435c9ab5138bfcd57e4e184713d91ff426d93628580"
             ]
         },
         "Metadata": {
-            "LastTagTime": "2026-10-25T00:41:23.423219284Z"
+            "LastTagTime": "2026-11-01T00:30:49.56872842Z"
         },
         "Descriptor": {
             "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:a5d7aa8d702fbc6a25981b5ea305616479d75e20e6b830994590f51a5ec52c84",
+            "digest": "sha256:c6c2e0342cc7a8b33c1c0bd570a6cbaaa2056c54f90b108643ed409c78bfdc17",
             "size": 856
         },
         "Identity": {
             "Build": [
                 {
-                    "Ref": "2c2wibhkq44a6s3tlfaf3ukeh",
-                    "CreatedAt": "2026-10-25T00:41:23.426088979Z"
+                    "Ref": "ht561bf3m0e59o1t4ohrv852x",
+                    "CreatedAt": "2026-11-01T00:30:49.575070545Z"
                 }
             ]
         }
